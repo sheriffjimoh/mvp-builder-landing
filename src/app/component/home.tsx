@@ -8,7 +8,7 @@ export default function Home() {
   const [isVisible, setIsVisible] = useState({});
 
   useEffect(() => {
-    const handleMouseMove = (e: { clientX: any; clientY: any; }) => {
+    const handleMouseMove = (e: { clientX: number; clientY: number; }) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <a href="#work" className="text-white/80 hover:text-white transition-colors">Work</a>
             <a href="#contact" className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-lg text-white font-medium hover:from-purple-700 hover:to-pink-700 transition-all">
-              Let's Talk
+              Let&apos;s Talk
             </a>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function Home() {
               </h2>
               
               <p className="text-2xl text-gray-300 font-light">
-                Let's turn your vision into reality — fast, modern, and scalable.
+                Let&apos;s turn your vision into reality — fast, modern, and scalable.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
