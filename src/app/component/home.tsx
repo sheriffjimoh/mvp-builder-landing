@@ -1,12 +1,12 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { AboutSection } from './about';
 
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState({});
-
+ 
   useEffect(() => {
     const handleMouseMove = (e: { clientX: number; clientY: number; }) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -21,81 +21,7 @@ export default function Home() {
 
 
 
-  const AboutSection = () => {
-    return (
-      <section className="py-32 px-6 relative">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left - Image */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-3xl p-8">
-                <img 
-                  src="https://imagizer.imageshack.com/img923/2757/2RJKn5.png"
-                  alt="Jimoh Sherifdeen - Full Stack Software Engineer"
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                  loading="lazy"
-                />
-              </div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-2xl opacity-50"></div>
-            </div>
-            
-            {/* Right - Content */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-5xl font-black bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent mb-6">
-                  About Me
-                </h2>
-                <div className="text-xl text-gray-300 space-y-6 leading-relaxed">
-                  <p>
-                    Hi, I&apos;m <span className="text-purple-400 font-semibold">Jimoh Sherifdeen</span>, 
-                    a full-stack software engineer with <span className="text-pink-400 font-semibold">6+ years</span> of experience 
-                    turning ideas into reality.
-                  </p>
-                  
-                  <p>
-                    My coding journey began in <span className="text-cyan-400 font-semibold">2018</span> with a simple dream: 
-                    to build platforms like Facebook. What started with HTML has evolved into expertise across modern web and mobile development.
-                  </p>
-                  
-                  <p>
-                    As a <span className="text-purple-400 font-semibold">Computer Science graduate</span>, I&apos;ve worked as a freelancer, 
-                    full-time professional, and part-time engineer. I specialize in <span className="text-pink-400 font-semibold">remote work</span> and 
-                    <span className="text-cyan-400 font-semibold"> Agile methodology</span>.
-                  </p>
-                  
-                  <p>
-                    My superpower? <span className="text-purple-400 font-semibold">Rapid learning</span> and adapting to new technologies. 
-                    I help founders ship MVPs in <span className="text-pink-400 font-semibold">2-3 weeks</span> using modern tech stacks.
-                  </p>
-                </div>
-              </div>
-              
-              {/* Skills Pills */}
-              <div className="flex flex-wrap gap-3">
-                {["6+ Years Experience", "Computer Science Graduate", "Remote Work Expert", "Agile Methodology", "Continuous Learner"].map((skill) => (
-                  <span key={skill} className="bg-white/10 border border-white/20 px-4 py-2 rounded-xl text-sm font-medium text-gray-300">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              
-              {/* CTA */}
-              <div className="pt-4">
-                <a 
-                  href="https://jimohsherifdeen.vercel.app" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-xl text-white font-bold hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105"
-                >
-                  View Full Portfolio →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    )
-  }
+  
 
   return (
     <main className="min-h-screen bg-black text-white font-sans overflow-x-hidden">
@@ -115,25 +41,27 @@ export default function Home() {
       </div>
 
       {/* Floating Navigation */}
-      <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-8 py-4">
-          <div className="flex items-center space-x-8">
+      <nav className="fixed top-6 left-1/2 transform md:w-auto  w-70 -translate-x-1/2 z-50">
+        <div className="bg-white/10 w-full backdrop-blur-xl border border-white/20 rounded-2xl px-8 py-4">
+          <div className="flex items-center space-x-8 md:flex-row flex-col w-full">
             <Link  href="/" className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
              JS - MVP Builder
             </Link>
+            <div className="flex items-center space-x-6 md:mt-0 mt-4">
             <a href="#work" className="text-white/80 hover:text-white transition-colors">Work</a>
-            <a href="#contact" className="bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-lg text-white font-medium hover:from-purple-700 hover:to-pink-700 transition-all">
+            <a href="#contact" className="w-full bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-lg text-white font-medium hover:from-purple-700 hover:to-pink-700 transition-all">
               Let&apos;s Talk
             </a>
+        </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6">
+      <section className="relative min-h-screen flex items-center justify-center px-6 mt-40 md:mt-0">
         <div className="max-w-7xl mx-auto text-center space-y-8 relative z-10">
           <div className="animate-fade-in-up">
-            <h1 className="text-7xl md:text-8xl font-black leading-tight">
+            <h1 className="text-5xl md:text-8xl font-black leading-tight">
               <span className="bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
                 Ship Your
               </span>
@@ -176,7 +104,7 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-32 px-6 relative">
+      <section className="py-20 px-6 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-6 mb-20">
             <h2 className="text-6xl font-black bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
@@ -227,7 +155,7 @@ export default function Home() {
       </section>
 
       {/* Tech Stack - Modern Grid */}
-      <section className="py-32 px-6 relative">
+      <section className="py-20 px-6 relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-20 ">
             <h2 className="text-6xl font-black text-white bg-clip-text z-50">
@@ -238,7 +166,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {tools.map((tool, index) => (
               <div 
                 key={tool}
@@ -260,7 +188,7 @@ export default function Home() {
       </section>
 
       {/* Featured Project */}
-      <section id="work" className="py-32 px-6">
+      <section id="work" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-12 relative overflow-hidden">
             <div className="relative z-10">
@@ -269,7 +197,7 @@ export default function Home() {
                 <span className="text-green-400 font-semibold">LIVE PROJECT</span>
               </div>
               
-              <h3 className="text-5xl font-black text-white mb-6">CurnectIntel</h3>
+              <h3 className="md:text-5xl text-3xl font-black text-white mb-6">CurnectIntel</h3>
               <p className="text-xl text-gray-300 mb-8 max-w-3xl leading-relaxed">
                 A complete <span className="text-purple-400 font-semibold">B2B KYC/KYB platform</span> shipped in 
                 just 3 weeks. Features real-time analytics, wallet systems, API management, and seamless Paystack integration.
@@ -291,11 +219,11 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-32 px-6">
+      <section id="contact" className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center relative">
-          <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-16 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl md:p-16 p-8 relative overflow-hidden">
             <div className="relative z-10 space-y-8">
-              <h2 className="text-6xl font-black">
+              <h2 className="md:text-6xl  text-4xl font-black">
                 <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
                   Ready to Ship?
                 </span>
