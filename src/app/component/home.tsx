@@ -47,7 +47,7 @@ export default function Home() {
                 </h2>
                 <div className="text-xl text-gray-300 space-y-6 leading-relaxed">
                   <p>
-                    Hi, I'm <span className="text-purple-400 font-semibold">Jimoh Sherifdeen</span>, 
+                    Hi, I&apos;m <span className="text-purple-400 font-semibold">Jimoh Sherifdeen</span>, 
                     a full-stack software engineer with <span className="text-pink-400 font-semibold">6+ years</span> of experience 
                     turning ideas into reality.
                   </p>
@@ -58,7 +58,7 @@ export default function Home() {
                   </p>
                   
                   <p>
-                    As a <span className="text-purple-400 font-semibold">Computer Science graduate</span>, I've worked as a freelancer, 
+                    As a <span className="text-purple-400 font-semibold">Computer Science graduate</span>, I&apos;ve worked as a freelancer, 
                     full-time professional, and part-time engineer. I specialize in <span className="text-pink-400 font-semibold">remote work</span> and 
                     <span className="text-cyan-400 font-semibold"> Agile methodology</span>.
                   </p>
