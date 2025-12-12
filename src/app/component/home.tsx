@@ -5,13 +5,13 @@ import { ArrowRight, Check, Code2, Zap, Users, Calendar, Smartphone, Globe } fro
 export default function Home() {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = () => {
-    if (email) {
-      console.log('Email submitted:', email);
-      alert('Thanks! I\'ll reach out soon.');
-      setEmail('');
-    }
-  };
+  // const handleSubmit = () => {
+  //   if (email) {
+  //     console.log('Email submitted:', email);
+  //     alert('Thanks! I\'ll reach out soon.');
+  //     setEmail('');
+  //   }
+  // };
 
   return (
     <div className="min-h-screen bg-white">
