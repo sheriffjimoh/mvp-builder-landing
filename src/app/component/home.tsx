@@ -148,7 +148,7 @@ export default function Home() {
                 <div className="text-sm font-bold text-gray-400 mb-2">STEP 1</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Discovery Call</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We discuss your product idea, target users, and core features. I'll help refine your vision into a buildable MVP scope.
+                  We discuss your product idea, target users, and core features. I&apos;ll help refine your vision into a buildable MVP scope.
                 </p>
               </div>
             </div>
@@ -241,7 +241,7 @@ export default function Home() {
             Ready to Build Your MVP?
           </h2>
           <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-            Let's turn your product idea into reality. Share your email and I'll reach out within 24 hours to discuss your project or book a 30-minute discovery call right away.
+            Let&apos;s turn your product idea into reality. Share your email and I&apos;ll reach out within 24 hours to discuss your project or book a 30-minute discovery call right away.
           </p>
           
           {/* <div className="max-w-md mx-auto mb-8">

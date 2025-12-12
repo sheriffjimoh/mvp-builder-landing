@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+
 export const AboutSection = () => {
     return (
       <section className="py-32 px-6 relative">
@@ -6,7 +9,7 @@ export const AboutSection = () => {
             {/* Left - Image */}
             <div className="relative">
               <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-3xl p-8">
-                <img 
+                <Image 
                   src="https://imagizer.imageshack.com/img923/2757/2RJKn5.png"
                   alt="Jimoh Sherifdeen - Full Stack Software Engineer"
                   className="w-full h-auto rounded-2xl shadow-2xl"
