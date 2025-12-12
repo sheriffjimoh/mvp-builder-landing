@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jimoh Sherifdeen - MVP Builder | Ship Your Product in 2-3 Weeks",
+  title: "Your MVP Guy - MVP Builder | Ship Your Product in 2-3 Weeks",
   description: "Full-stack software engineer specializing in rapid MVP development. I help founders turn product ideas into real, working web apps using modern tech stack - Laravel, Next.js, TypeScript, and more. 6+ years experience in remote web & mobile development.",
   keywords: [
     "MVP development",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jimoh Sherifdeen - MVP Builder | Ship Your Product in 2-3 Weeks",
+    title: "Your MVP Guy - MVP Builder | Ship Your Product in 2-3 Weeks",
     description: "Full-stack software engineer with 6+ years experience. I help founders turn product ideas into real, working web apps using modern tech stack. Remote work specialist.",
     images: ['https://imagizer.imageshack.com/img924/9933/tyfLSE.png'],
     creator: "@sherifdeenolat2",
