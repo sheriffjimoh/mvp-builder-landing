@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -185,25 +186,26 @@ export default function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
-        
+
         {/* Additional Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#6366f1" />
         <meta name="color-scheme" content="dark light" />
-        
+
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* Additional favicon sizes */}
         <link rel="icon" type="image/png" sizes="32x32" href="https://imagizer.imageshack.com/img924/9933/tyfLSE.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="https://imagizer.imageshack.com/img924/9933/tyfLSE.png" />
         <link rel="apple-touch-icon" href="https://imagizer.imageshack.com/img924/9933/tyfLSE.png" />
-        
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Analytics />
         {children}
       </body>
     </html>
