@@ -234,7 +234,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Tech Stack</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Built on the modern web's most reliable technologies for speed, scale, and performance.
+              Built on the modern web&apos;s most reliable technologies for speed, scale, and performance.
             </p>
           </div>
 

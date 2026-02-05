@@ -96,7 +96,7 @@ export default function MVPOfferPage() {
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">Everything You Need to Launch</h2>
-                        <p className="text-lg text-gray-600">No hidden fees. No "maintenance" traps. Just a complete product.</p>
+                        <p className="text-lg text-gray-600">No hidden fees. No &quot;maintenance&quot; traps. Just a complete product.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
