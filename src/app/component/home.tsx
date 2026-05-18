@@ -1,5 +1,6 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
+import Image from 'next/image';
 import { ArrowRight, Globe, Smartphone, Users, Code2, Zap, Check } from 'lucide-react';
 import Link from 'next/link';
 import Nav from './nav';
@@ -7,8 +8,6 @@ import Footer from './footer';
 import CTA from './cta';
 
 export default function Home() {
-  const [email, setEmail] = useState('');
-
   const currentDate = new Date();
   const currentMonth = currentDate.toLocaleString('en-US', { month: 'short' });
   const currentYear = currentDate.getFullYear();
@@ -58,7 +57,7 @@ export default function Home() {
                 <div className="flex -space-x-2">
                   {[...Array(4)].map((_, i) => (
                     <div key={i} className={`w-8 h-8 rounded-full border-2 border-white bg-gray-${(i + 2) * 100} flex items-center justify-center text-xs overflow-hidden`}>
-                      <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i}&backgroundColor=e5e7eb`} alt="Avatar" />
+                      <Image unoptimized width={32} height={32} className="rounded-full" src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${i}&backgroundColor=e5e7eb`} alt="Avatar" />
                     </div>
                   ))}
                 </div>
@@ -140,7 +139,7 @@ export default function Home() {
               <div className="text-xs font-bold text-gray-400 mb-2 uppercase">Step 1</div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Discovery Call</h3>
               <p className="text-gray-600 text-sm">
-                We discuss your product idea, target users, and core features. I'll help refine your vision into a concrete, buildable MVP scope.
+                We discuss your product idea, target users, and core features. I&apos;ll help refine your vision into a concrete, buildable MVP scope.
               </p>
             </div>
 
@@ -176,7 +175,7 @@ export default function Home() {
             <div className="md:w-1/3  top-32">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">What You Get</h2>
               <p className="text-xl text-gray-600 mb-8">
-                A lean MVP with only the features that drive conversions. No bloat. No "nice-to-haves." Just the essentials.
+                A lean MVP with only the features that drive conversions. No bloat. No &quot;nice-to-haves.&quot; Just the essentials.
               </p>
               <Link href="/offer" className="inline-flex items-center gap-2 font-semibold text-gray-900 border-b-2 border-gray-900 hover:text-gray-700 transition-colors pb-1">
                 View Full Offer Details <ArrowRight className="w-4 h-4" />
@@ -246,7 +245,7 @@ export default function Home() {
               </div>
               
               <p className="text-gray-600 mb-6 leading-relaxed italic">
-                "We wanted to build an all-in-one intelligence tool but kept adding features. Sheriff helped us focus on data import and visualization,the core feature founders actually paid for. Launched in 3 weeks. Now processing 10K+ daily insights."
+                &quot;We wanted to build an all-in-one intelligence tool but kept adding features. Sheriff helped us focus on data import and visualization, the core feature founders actually paid for. Launched in 3 weeks. Now processing 10K+ daily insights.&quot;
               </p>
               
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
@@ -269,7 +268,7 @@ export default function Home() {
               </div>
               
               <p className="text-gray-600 mb-6 leading-relaxed italic">
-                "We had 15 AI features planned but couldn't prioritize. Sheriff's approach: strip it down to one powerful bot builder. That single feature drove 60% of our early revenue. Rest of features came later when we had runway."
+                &quot;We had 15 AI features planned but couldn&apos;t prioritize. Sheriff&apos;s approach: strip it down to one powerful bot builder. That single feature drove 60% of our early revenue. Rest of features came later when we had runway.&quot;
               </p>
               
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
@@ -292,7 +291,7 @@ export default function Home() {
               </div>
               
               <p className="text-gray-600 mb-6 leading-relaxed italic">
-                "We were overengineering everything. Sheriff pushed us to focus: one CSV import flow that works perfectly. Shipped 2 weeks ahead of schedule. Our first 200 users adopted just for that one feature."
+                &quot;We were overengineering everything. Sheriff pushed us to focus: one CSV import flow that works perfectly. Shipped 2 weeks ahead of schedule. Our first 200 users adopted just for that one feature.&quot;
               </p>
               
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">

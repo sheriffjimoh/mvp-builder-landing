@@ -8,7 +8,7 @@ export default function CTA() {
                     Ready to Build Your MVP?
                 </h2>
                 <p className="text-base text-gray-600 mb-8 leading-relaxed">
-                    Let's turn your product idea into reality. Book a 30-minute discovery call to discuss your project.
+                    Let&apos;s turn your product idea into reality. Book a 30-minute discovery call to discuss your project.
                 </p>
 
                 <div className="mb-8">
