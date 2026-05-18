@@ -8,13 +8,12 @@ export default function Nav() {
                     Your MVP Guy
                 </Link>
                 <div className="flex items-center gap-4">
-                    <a
-                        href="https://jimohsherifdeen.vercel.app/projects"
-                        target='_blank'
+                    {/* <a
+                        href="#contact"
                         className="hidden sm:inline-block px-6 py-2 text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
                     >
-                        Past Projects
-                    </a>
+                        Get Started
+                    </a> */}
                     <a
                         href="https://calendly.com/jimohsherifdeen6/30min"
                         target='_blank'
