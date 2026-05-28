@@ -8,7 +8,7 @@ export const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left - Image */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-3xl p-8">
+              <div className="bg-gradient-to-br from-sky-600/20 to-cyan-600/20 rounded-3xl p-8">
                 <Image 
                   src="https://imagizer.imageshack.com/img923/2757/2RJKn5.png"
                   alt="Jimoh Sherifdeen - Full Stack Software Engineer"
@@ -16,7 +16,7 @@ export const AboutSection = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-2xl opacity-50"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-sky-500 to-cyan-500 rounded-full blur-2xl opacity-50"></div>
             </div>
             
             {/* Right - Content */}
@@ -27,8 +27,8 @@ export const AboutSection = () => {
                 </h2>
                 <div className="text-xl text-gray-300 space-y-6 leading-relaxed">
                   <p>
-                    Hi, I&apos;m <span className="text-purple-400 font-semibold">Jimoh Sherifdeen</span>, 
-                    a full-stack software engineer with <span className="text-pink-400 font-semibold">6+ years</span> of experience 
+                    Hi, I&apos;m <span className="text-sky-400 font-semibold">Jimoh Sherifdeen</span>, 
+                    a full-stack software engineer with <span className="text-cyan-400 font-semibold">6+ years</span> of experience 
                     turning ideas into reality.
                   </p>
                   
@@ -38,14 +38,14 @@ export const AboutSection = () => {
                   </p>
                   
                   <p>
-                    As a <span className="text-purple-400 font-semibold">Computer Science graduate</span>, I&apos;ve worked as a freelancer, 
-                    full-time professional, and part-time engineer. I specialize in <span className="text-pink-400 font-semibold">remote work</span> and 
+                    As a <span className="text-sky-400 font-semibold">Computer Science graduate</span>, I&apos;ve worked as a freelancer, 
+                    full-time professional, and part-time engineer. I specialize in <span className="text-cyan-400 font-semibold">remote work</span> and 
                     <span className="text-cyan-400 font-semibold"> Agile methodology</span>.
                   </p>
                   
                   <p>
-                    My superpower? <span className="text-purple-400 font-semibold">Rapid learning</span> and adapting to new technologies. 
-                    I help founders ship MVPs in <span className="text-pink-400 font-semibold">2-3 weeks</span> using modern tech stacks.
+                    My superpower? <span className="text-sky-400 font-semibold">Rapid learning</span> and adapting to new technologies. 
+                    I help founders ship MVPs in <span className="text-cyan-400 font-semibold">2-3 weeks</span> using modern tech stacks.
                   </p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export const AboutSection = () => {
                   href="https://jimohsherifdeen.vercel.app" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-xl text-white font-bold hover:from-purple-700 hover:to-pink-700 transition-all hover:scale-105"
+                  className="inline-block bg-gradient-to-r from-sky-600 to-cyan-600 px-8 py-4 rounded-xl text-white font-bold hover:from-sky-700 hover:to-cyan-700 transition-all hover:scale-105"
                 >
                   View Full Portfolio →
                 </a>

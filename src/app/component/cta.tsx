@@ -1,42 +1,33 @@
-import React from 'react';
-
 export default function CTA() {
-    return (
-        <section id="contact" className="py-16 px-6 bg-gray-100 border-y border-gray-200">
-            <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    Ready to Build Your MVP?
-                </h2>
-                <p className="text-base text-gray-600 mb-8 leading-relaxed">
-                    Let&apos;s turn your product idea into reality. Book a 30-minute discovery call to discuss your project.
-                </p>
+  return (
+    <section id="contact" className="bg-slate-950 text-slate-100">
+      <div className="mx-auto max-w-6xl px-6 py-20 text-center">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">Let&apos;s build together</p>
+        <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          Ready to launch your MVP in weeks?
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-400">
+          We turn product ideas into working MVPs fast, with clean design, scalable code, and launch-ready performance.
+        </p>
 
-                <div className="mb-8">
-                    <a
-                        href="https://calendly.com/jimohsherifdeen6/30min"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-8 py-3 bg-gray-900 text-white hover:bg-gray-800 transition-colors font-medium border border-gray-900"
-                    >
-                        Book a 30-Min Call
-                    </a>
-                </div>
-
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-gray-600 text-sm">
-                    <div className="flex items-center gap-2">
-                        <span className="font-bold">→</span>
-                        <span>2-3 weeks delivery</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="font-bold">→</span>
-                        <span>Modern tech stack</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="font-bold">→</span>
-                        <span>Post-launch support</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href="https://calendly.com/jimohsherifdeen6/30min"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-sky-500 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:bg-sky-400"
+          >
+            Book a Call
+          </a>
+          <a
+            href="/offer"
+            className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 px-8 py-3 text-sm font-semibold text-slate-100 transition hover:border-slate-500 hover:bg-slate-800"
+          >
+            See Offer Details
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
+
