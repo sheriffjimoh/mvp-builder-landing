@@ -73,39 +73,7 @@ export default function MVPOfferPage() {
                 </div>
             </section>
 
-            {/* Timeline */}
-            <section id="process" className="py-16 border-t border-b border-gray-200">
-                <div className="max-w-6xl mx-auto px-6">
-                    <div className="text-center mb-10">
-                        <h2 className="text-3xl font-bold mb-2">Typical MVP Timeline</h2>
-                        <p className="text-gray-600">From kickoff to launch in 2–3 weeks</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-4">
-                        {[
-                            { title: "Week 1", subtitle: "Strategy", desc: "Define core goals, user flow, and must-have conversion feature." },
-                            { title: "Week 2", subtitle: "Build", desc: "Rapid development on essential MVP screens, integrations, and launch-ready UI." },
-                            { title: "Week 3", subtitle: "Launch", desc: "Test, refine, deploy live, and activate early post-launch support." },
-                        ].map((item, index) => (
-                            <div
-                                key={index}
-                                className="bg-white p-6 border border-gray-200"
-                            >
-                                <div className="text-xs font-bold text-gray-400 mb-1 uppercase">{item.title}</div>
-                                <h3 className="text-lg font-bold text-gray-900 mb-2">{item.subtitle}</h3>
-                                <p className="text-gray-600 text-sm">{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-
-          
-
-
-
-
+           
 
   {/* Pricing */}
             <section className="py-16 bg-white">
