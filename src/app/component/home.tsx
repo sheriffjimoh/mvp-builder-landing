@@ -145,7 +145,7 @@ export default function Home() {
       I help founders build and launch their MVP, fast.
     </h2>
     <p className="mt-5 text-lg leading-8 text-slate-400">
-      Yes, I use AI tools like everyone else, they help me move faster. But turning an idea into something that actually works still takes real judgment: knowing what to build, what to skip, and how to make sure it holds up once real people start using it. That part's on me.
+      Yes, I use AI tools like everyone else, they help me move faster. But turning an idea into something that actually works still takes real judgment: knowing what to build, what to skip, and how to make sure it holds up once real people start using it. That part&apos;s on me.
     </p>
 
     <div className="mt-10 grid gap-5 sm:grid-cols-2">
