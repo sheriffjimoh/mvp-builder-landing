@@ -16,7 +16,7 @@ export default function Home() {
       title: 'Web App',
       description: 'Responsive web applications built with modern tech that work on any device.',
       icon: LayoutDashboard,
-      accent: 'sky',
+      accent: 'yellow',
     },
     {
       title: 'Mobile App',
@@ -53,7 +53,7 @@ export default function Home() {
       description: 'Business Intelligence Platform',
       quote: 'Focused on core data import and visualization for fast adoption.',
       icon: Globe,
-      accent: 'sky',
+      accent: 'yellow',
       url: 'https://curnectintel.com',
     },
     {
@@ -75,17 +75,17 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-sky-500/20 selection:text-slate-100">
+    <div className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)] selection:bg-[rgba(14,165,233,0.18)] selection:text-[color:var(--foreground)]">
       <Nav />
 
       <main className="relative overflow-hidden">
-        <section className="relative overflow-hidden bg-slate-950 pb-24 pt-28">
-          <div className="absolute right-0 top-24 h-[520px] w-[520px] rounded-full bg-sky-600/20" />
+        <section className="relative overflow-hidden bg-[color:var(--background)] pb-24 pt-28">
+          <div className="absolute right-0 top-24 h-[520px] w-[520px] rounded-full bg-yellow-600/20" />
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
               <div className="relative z-10">
-                <div className="max-w-xl rounded-[2rem] border border-slate-800 bg-slate-900 p-10 shadow-2xl shadow-slate-950/60">
-                  <p className="text-sm font-semibold uppercase tracking-[0.35em] text-sky-400">Launch an MVP that converts</p>
+                <div className="max-w-xl rounded-[2rem] border border-slate-800 bg-[color:var(--surface)] p-10 shadow-2xl shadow-slate-950/60">
+                  <p className="text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">Launch an MVP that converts</p>
                   <h1 className="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                     Your agency for fast, conversion-focused MVPs.
                   </h1>
@@ -97,7 +97,7 @@ export default function Home() {
                       href="https://calendly.com/jimohsherifdeen6/30min"
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-400"
+                      className="inline-flex items-center justify-center rounded-full bg-yellow-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-yellow-400"
                     >
                       Book a discovery call
                     </a>
@@ -112,7 +112,7 @@ export default function Home() {
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-3">
                   {stats.map((stat) => (
-                    <div key={stat.label} className="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-5 text-center">
+                    <div key={stat.label} className="rounded-[1.75rem] border border-slate-800 bg-[color:var(--surface)] p-5 text-center">
                       <p className="text-3xl font-semibold text-white">{stat.value}</p>
                       <p className="mt-2 text-xs uppercase tracking-[0.32em] text-slate-500">{stat.label}</p>
                     </div>
@@ -122,76 +122,49 @@ export default function Home() {
 
               <div className="relative flex justify-center">
                 <div className="relative">
-                  <div className="absolute -left-11 -top-10 h-80 w-80 rounded-full bg-sky-600" />
+                  <div className="absolute -left-11 -top-10 h-80 w-80 rounded-full bg-yellow-600" />
                   <div className="relative overflow-hidden rounded-full border-8 border-slate-950 bg-slate-950">
                     <img
-                      src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
-                      alt="Developer portrait"
+                     // src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                     src="/img.png"
+                     alt="Developer portrait"
                       className="h-[420px] w-[420px] object-cover"
                     />
                   </div>
-                  <div className="absolute -right-12 bottom-0 h-24 w-24 rounded-full bg-sky-600/80" />
+                  <div className="absolute -right-12 bottom-0 h-24 w-24 rounded-full bg-yellow-600/80" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="about" className="bg-slate-900 px-6 py-24">
-          <div className="mx-auto max-w-7xl grid gap-12 lg:grid-cols-[0.95fr_0.7fr] items-start">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-sky-400">About</p>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                Agency-grade MVP delivery for founders.
-              </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-400">
-                We build products that launch quickly, avoid feature bloat, and focus on user conversion. Your MVP is designed to win early customers and validate product-market fit.
-              </p>
+       <section id="about" className="bg-[color:var(--surface-2)] px-6 py-24">
+  <div className="mx-auto max-w-3xl text-center">
+    <p className="text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">About</p>
+    <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+      I help founders build and launch their MVP, fast.
+    </h2>
+    <p className="mt-5 text-lg leading-8 text-slate-400">
+      Yes, I use AI tools like everyone else, they help me move faster. But turning an idea into something that actually works still takes real judgment: knowing what to build, what to skip, and how to make sure it holds up once real people start using it. That part's on me.
+    </p>
 
-              <div className="mt-10 grid gap-5 sm:grid-cols-2">
-                <div className="rounded-[1.75rem] border border-slate-800 bg-slate-950 p-6">
-                  <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Scope</p>
-                  <p className="mt-4 text-lg font-semibold text-white">Ruthless prioritization</p>
-                </div>
-                <div className="rounded-[1.75rem] border border-slate-800 bg-slate-950 p-6">
-                  <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Launch</p>
-                  <p className="mt-4 text-lg font-semibold text-white">Delivery in 2–3 weeks</p>
-                </div>
-              </div>
-            </div>
+    <div className="mt-10 grid gap-5 sm:grid-cols-2">
+      <div className="rounded-[1.75rem] border border-slate-800 bg-slate-950 p-6">
+        <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Focus</p>
+        <p className="mt-4 text-lg font-semibold text-white">Only what actually matters</p>
+      </div>
+      <div className="rounded-[1.75rem] border border-slate-800 bg-slate-950 p-6">
+        <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Timeline</p>
+        <p className="mt-4 text-lg font-semibold text-white">Live in 2–3 weeks</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div className="rounded-[2.5rem] border border-slate-800 bg-slate-950 p-8 shadow-2xl shadow-slate-950/30">
-              <div className="flex flex-col items-center text-center">
-                <div className="h-44 w-44 overflow-hidden rounded-full border-4 border-slate-900 bg-slate-900">
-                  <img
-                    // src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80"
-                    src="/img.png"
-                    alt="Profile avatar"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <p className="mt-6 text-2xl font-semibold text-white">Your MVP Guy</p>
-                <p className="mt-2 text-sm uppercase tracking-[0.25em] text-slate-500">Agency for MVP launches</p>
-              </div>
-
-              <div className="mt-10 space-y-6">
-                <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Deliverables</p>
-                  <p className="mt-4 text-lg font-semibold text-white">Conversion-focused MVP</p>
-                </div>
-                <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Support</p>
-                  <p className="mt-4 text-lg font-semibold text-white">30 days post-launch support</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="services" className="bg-slate-950 px-6 py-24">
+        <section id="services" className="bg-[color:var(--background)] px-6 py-24">
           <div className="mx-auto max-w-7xl">
             <div className="text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-sky-400">What we build</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">What we build</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 Web, mobile, and cross-platform MVPs.
               </h2>
@@ -203,20 +176,15 @@ export default function Home() {
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {services.map((service) => {
                 const Icon = service.icon;
-                const accent =
-                  service.accent === 'cyan'
-                    ? 'bg-cyan-500/15 text-cyan-400'
-                    : service.accent === 'teal'
-                    ? 'bg-cyan-500/15 text-cyan-400'
-                    : 'bg-sky-500/15 text-sky-400';
+                const accent = 'bg-yellow-500/15 text-yellow-400';
                 return (
-                  <div key={service.title} className="rounded-[2rem] border border-slate-800 bg-slate-900 p-8 shadow-lg shadow-slate-950/20 transition hover:-translate-y-1">
+                  <div key={service.title} className="rounded-[2rem] border border-slate-800 bg-[color:var(--surface)] p-8 shadow-lg shadow-slate-950/20 transition hover:-translate-y-1">
                     <div className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-3xl ${accent}`}>
                       <Icon className="h-6 w-6" />
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
                     <p className="text-slate-400 leading-7">{service.description}</p>
-                    <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-sky-500">
+                    <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-yellow-500">
                       Learn more
                       <ArrowRight className="h-4 w-4" />
                     </div>
@@ -227,10 +195,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="process" className="bg-slate-900 px-6 py-24">
+        <section id="process" className="bg-[color:var(--surface-2)] px-6 py-24">
           <div className="mx-auto max-w-7xl">
             <div className="text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-sky-400">Process</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">Process</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 How we build your MVP.
               </h2>
@@ -242,7 +210,7 @@ export default function Home() {
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {process.map((item) => (
                 <div key={item.title} className="rounded-[2rem] border border-slate-800 bg-slate-950 p-8 shadow-lg shadow-slate-950/10">
-                  <span className="inline-flex rounded-full bg-sky-500/10 px-3 py-1 text-xs uppercase tracking-[0.35em] text-sky-300">
+                  <span className="inline-flex rounded-full bg-yellow-500/10 px-3 py-1 text-xs uppercase tracking-[0.35em] text-yellow-300">
                     {item.title}
                   </span>
                   <p className="mt-6 text-lg font-semibold text-white">{item.title}</p>
@@ -253,10 +221,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="work" className="bg-slate-950 px-6 py-24">
+        <section id="work" className="bg-[color:var(--background)] px-6 py-24">
           <div className="mx-auto max-w-7xl">
             <div className="text-center mb-14">
-              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-sky-400">Real results</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">Real results</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 Real MVPs launched faster.
               </h2>
@@ -268,14 +236,14 @@ export default function Home() {
             <div className="grid gap-6 md:grid-cols-3">
               {projects.map((project) => {
                 const Icon = project.icon;
-                const accent = project.accent === 'cyan' ? 'bg-cyan-500/15 text-cyan-300' : 'bg-sky-500/15 text-sky-400';
+                const accent =  'bg-yellow-500/15 text-yellow-400';
                 return (
                   <a
                     key={project.company}
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-950 p-8 text-white transition hover:-translate-y-1 hover:shadow-2xl"
+                    className="group overflow-hidden rounded-[2rem] border border-slate-800 bg-[color:var(--surface)] p-8 text-[color:var(--foreground)] transition hover:-translate-y-1 hover:shadow-2xl"
                   >
                     <div className={`mb-6 inline-flex h-16 w-16 items-center justify-center rounded-3xl ${accent}`}>
                       <Icon className="h-7 w-7" />

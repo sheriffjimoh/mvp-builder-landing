@@ -8,7 +8,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 bg-slate-950/30 backdrop-blur-2xl border-b border-slate-800/40">
+    <nav className="fixed inset-x-0 top-0 z-50 bg-[color:var(--surface-2)] backdrop-blur-2xl border-b border-slate-800/40">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-2xl font-semibold tracking-tight text-white">
           Your MVP Guy
@@ -37,7 +37,7 @@ export default function Nav() {
             href="https://calendly.com/jimohsherifdeen6/30min"
             target="_blank"
             rel="noreferrer"
-            className="hidden rounded-full bg-sky-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:bg-sky-400 md:inline-flex"
+            className="hidden rounded-full bg-yellow-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-yellow-500/20 transition hover:bg-yellow-400 md:inline-flex"
           >
             Book a Call
           </a>

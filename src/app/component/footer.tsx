@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-300">
+    <footer className="bg-[color:var(--surface-2)] text-[color:var(--muted)]">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
           <div>

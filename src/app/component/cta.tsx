@@ -1,8 +1,8 @@
 export default function CTA() {
   return (
-    <section id="contact" className="bg-slate-950 text-slate-100">
+    <section id="contact" className="bg-[color:var(--surface-2)] text-[color:var(--foreground)]">
       <div className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-400">Let&apos;s build together</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-yellow-400">Let&apos;s build together</p>
         <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
           Ready to launch your MVP in weeks?
         </h2>
@@ -15,7 +15,7 @@ export default function CTA() {
             href="https://calendly.com/jimohsherifdeen6/30min"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-sky-500 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:bg-sky-400"
+            className="inline-flex items-center justify-center rounded-full bg-yellow-500 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-yellow-500/20 transition hover:bg-yellow-400"
           >
             Book a Call
           </a>
